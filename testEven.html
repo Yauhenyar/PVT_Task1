@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+	var freeNumber = prompt ('Введите любое число')
+	var formatNumber = freeNumber.split ('');
+	for (var index = 0; index < formatNumber.length; ++index) {
+		if (formatNumber [index]%2==0 && formatNumber [index + 1]%2==0) {
+			console.log(formatNumber [index] + '-');
+			formatNumber [index] = formatNumber [index] + '-';
+		}
+	}
+	alert (formatNumber.join(''));
+</script>
+
+</body>
+</html>

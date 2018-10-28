@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+	//минимальная проверка на ввод нужного числа
+  for (var i = 1; i <= 5; i++) {
+            var entNumber = prompt('Введите любое число от 1 до 100', 100);
+
+            // Здесь if не в теле функции
+            if (+entNumber > 100 || +entNumber < 1 || null) {
+              alert('Вы должны ввести число от 1 до 100. Попробуйте еще раз!');
+            } else {
+                break;
+            }
+
+  }
+        // Функция без использования if, switch и тернарного оператора
+    function tranformNumber() {
+
+      var fizzBuzz = entNumber % 3 == 0 && entNumber % 5 == 0 && console.log(fizzBuzz = 'FizzBuzz');
+    	var fizz = (fizzBuzz == false && entNumber % 3 == 0) && console.log(fizz = 'Fizz');
+      var buzz = (fizzBuzz == false && entNumber % 5 == 0) && console.log(buzz = 'Buzz');
+
+    }
+
+    tranformNumber (entNumber);
+
+</script>
+
+</body>
+</html>
